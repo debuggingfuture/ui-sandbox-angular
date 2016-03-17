@@ -1,0 +1,4 @@
+node_modules/
+shared/src
+shared/tasks
+shared/gulpfile.js
