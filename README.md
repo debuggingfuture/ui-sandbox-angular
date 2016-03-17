@@ -13,3 +13,10 @@ If you want run only some tests matching a given pattern you can do this in the 
 
 karma start &
 karma run -- --grep=<pattern>
+
+### Browser
+
+- Start the server
+webdriver-manager update --standalone
+- Run Test Case
+ protractor protractor.conf.js
