@@ -1,7 +1,12 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var path = require('path');
 module.exports = {
-  entry: 'index.js',
+  entry: {
+    'app':'index.js',
+    'vendors': [
+      'angular', 'lodash'
+    ]
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
@@ -17,9 +22,8 @@ module.exports = {
     ]
   },
   externals: {
-    //don't bundle the 'react' npm package with our bundle.js
-    //but get it from a global 'React' variable
-    'angular': 'angular'
+    // if we do CDN
+    // 'angular': 'angular'
   },
   resolve: {
     root: [__dirname],
