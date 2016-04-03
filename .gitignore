@@ -3,3 +3,4 @@ shared/src/*
 shared/tasks/*
 shared/gulpfile.js
 .env
+*.sublime-*

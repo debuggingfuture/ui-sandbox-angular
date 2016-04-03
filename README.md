@@ -3,8 +3,8 @@ angular 1.5 + webpack + semanticui
 
 
 
-## Tools
-npm install -g mocha -g protractor -g webpack -g webpack-dev-server -g karma-cli
+## Install
+`npm install && npm install -g mocha -g protractor -g webpack -g webpack-dev-server -g karma-cli`
 
 ## Testing
 http://localhost:9876/
